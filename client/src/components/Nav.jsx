@@ -1,6 +1,7 @@
 /** @format */
 
 import React from "react";
+import { Link } from "react-router-dom";// import Link from react-router-dom
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./nav.css"; // Ensure this is properly imported
 
@@ -24,13 +25,13 @@ const NavBar = () => {
           <a className="nav-link active" aria-current="page" href="#">
             Home
           </a>
-          <a className="nav-link" href="#">
+          <a className="nav-link" href="/about">
             About
           </a>
           <a className="nav-link" href="#">
             Services
           </a>
-          <a className="nav-link" href="#">
+          <a className="nav-link" href="/contact">
             Contact
           </a>
         </div>

@@ -3,9 +3,10 @@
 import { Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav";
 import Home from "./views/Home";
+import About from "./views/About";
 import Create from "./views/Create";
-import FeedbackTable from "./views/FeedbackTable";
-import Blog from "./views/Blog";
+import Contact from "./views/Contact";
+import Services from "./views/Services";
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap globally
 
 function App() {
@@ -14,9 +15,11 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
         <Route path="/create" element={<Create />} />
-        <Route path="/feedback" element={<FeedbackTable />} />
-        <Route path="/blog" element={<Blog />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </div>
   );

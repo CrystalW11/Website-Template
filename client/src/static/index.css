@@ -2,3 +2,11 @@ h1 {
      border: 2px solid red;
 }
 
+.centered-content {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;
+     /* Ensure it takes up the full viewport height */
+}
