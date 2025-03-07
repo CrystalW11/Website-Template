@@ -59,5 +59,7 @@ p {
 
 
 .white-text {
-     color:white
+     color:green;
+     font-weight: 500;
+     font-size: xx-large;
 }

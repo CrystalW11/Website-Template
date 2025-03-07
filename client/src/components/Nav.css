@@ -1,23 +1,24 @@
-.navbar {
+.container-fluid {
      /* border: 1px solid red; */
      /* Optional: Debugging */
      margin: 0 auto;
      /* Reset margin */
-     font-size: 1.1rem;
+     font-size: 35px;
      /* Standard font size */
+     justify-content: flex-start;
      font-weight: 600;
-     font-style: normal;
+     font-style:normal;
      /* Clean font style */
      height: auto;
      /* Allow the navbar to adjust height based on content */
      background-color: blanchedalmond !important;
      /* Force background color */
-     color: darkolivegreen;
-     padding-left: 15px;
+     color: green;
+     padding-left: 30px;
      /* Adjust padding */
-     padding-right: 15px;
+     padding-right: 30px;
      /* Adjust padding */
-     padding-top: 8px;
+     padding-top: 20px;
      /* Reduced padding to keep it compact */
      padding-bottom: 8px;
      /* Reduced padding to keep it compact */
@@ -25,6 +26,13 @@
      /* Default block behavior */
      box-sizing: border-box;
 
+}
+
+.container {
+     margin: auto;
+     flex: auto;
+     padding: auto;
+     padding-top: 10%;
 }
 
 .navbar .navbar-brand img {
