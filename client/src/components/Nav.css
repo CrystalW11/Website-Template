@@ -1,15 +1,23 @@
-.custom-navbar {
-     position: fixed;
-     /* Fix the navbar at the top */
-     top: 0;
-     /* Stick to the top */
-     left: 0;
-     width: 100%;
-     /* Full width */
-     z-index: 1000;
-     /* Ensures it stays above other content */
-     background-color: #004080 !important;
-     /* Keep the background color */
+.navbar {
+     border: red 3px solid;
+     margin: auto;
+     font-size: x-large;
+     font-weight: 600;
+     font-style: oblique;
+     font-feature-settings: "aalt";
+
+
+     margin-top: -5%;
+     background-color: blanchedalmond !important; /* force the background color*/
+     color: darkolivegreen;
+     padding-left: 20px;
+     /* Adjust padding on the left */
+     padding-right: 20px;
+     /* Adjust padding on the right */
+     padding-top: 10px;
+     /* Adjust padding on the top */
+     padding-bottom: 10px;
+     /* Adjust padding on the bottom */
 }
 
 body {
