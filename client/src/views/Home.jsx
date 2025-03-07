@@ -12,11 +12,14 @@ const Home = () => {
         backgroundPosition: "center",
         height: "100vh",
         margin: 0,
-        paddingLeft: 15
-      }}
-    >
-      <h1>Welcome to Triple R Ranch and Winery</h1>
-      <p>This is the home page of your winery application.</p>
+        paddingLeft: 15,
+        paddingRight: 15,
+        border: "2px solid white", // Adds a white border with a width of 2px
+      }}>
+      <h1 className="white-text">Welcome to Triple R Ranch and Winery</h1>
+      <p className="white-text">
+        This is the home page of your winery application.
+      </p>
     </div>
   );
 };
