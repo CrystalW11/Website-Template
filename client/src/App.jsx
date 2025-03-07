@@ -8,6 +8,8 @@ import Create from "./views/Create";
 import Contact from "./views/Contact";
 import Services from "./views/Services";
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap globally
+import './static/index.css'; // Correct import path for index.css in static folder
+
 
 function App() {
   return (

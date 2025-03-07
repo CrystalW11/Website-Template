@@ -1,12 +1,59 @@
-h1 {
-     border: 2px solid red;
+/* .container-fluid: Remove min-height if it's stretching the layout */
+.container-fluid {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     padding: 20px;
+     background-color: #f4f4f4;
+     box-sizing: border-box;
+     /* Remove min-height to prevent stretching */
+     min-height: auto;
+     /* Remove or set to 'auto' */
 }
 
+/* .centered-content: Remove min-height to prevent forced stretching */
 .centered-content {
      display: flex;
      flex-direction: column;
      align-items: center;
-     justify-content: center;
-     min-height: 100vh;
-     /* Ensure it takes up the full viewport height */
+     justify-content: flex-start;
+     /* Align items to the top */
+     padding: 20px;
+     min-height: auto;
+     /* Avoid stretching */
 }
+
+/* Common section container styling */
+.section-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     padding: 20px;
+     background-color: #f4f4f4;
+     box-sizing: border-box;
+     min-height: 100vh;
+}
+
+/* Common inner container styling for both services and contact */
+.section-content {
+     text-align: center;
+     max-width: 800px;
+     width: 100%;
+     padding: 20px;
+     background-color: #fff;
+     border-radius: 8px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+     margin-bottom: 10px;
+     font-size: 2rem;
+}
+
+p {
+     margin: 5px 0;
+     font-size: 1.1rem;
+}
+

@@ -1,23 +1,44 @@
 .navbar {
-     /* border: red 3px solid; */
-     margin: auto;
-     font-size: x-large;
+     border: 1px solid red;
+     /* Optional: Debugging */
+     margin: 0 auto;
+     /* Reset margin */
+     font-size: 1.1rem;
+     /* Standard font size */
      font-weight: 600;
-     font-style: oblique;
-     margin-top: -5%;
-     background-color: blanchedalmond !important; /* force the background color*/
+     font-style: normal;
+     /* Clean font style */
+     height: auto;
+     /* Allow the navbar to adjust height based on content */
+     background-color: blanchedalmond !important;
+     /* Force background color */
      color: darkolivegreen;
-     padding-left: 20px;
-     /* Adjust padding on the left */
-     padding-right: 20px;
-     /* Adjust padding on the right */
-     padding-top: 40px;
-     /* Adjust padding on the top */
-     padding-bottom: 40px;
-     /* Adjust padding on the bottom */
+     padding-left: 15px;
+     /* Adjust padding */
+     padding-right: 15px;
+     /* Adjust padding */
+     padding-top: 8px;
+     /* Reduced padding to keep it compact */
+     padding-bottom: 8px;
+     /* Reduced padding to keep it compact */
+     display: block;
+     /* Default block behavior */
+     box-sizing: border-box;
+     /* Include padding and border in total width/height */
+     width: 100%;
+     /* Make sure it stretches across the full width */
 }
 
-body {
-     padding-top: 60px;
-     /* Prevent content from being hidden behind the navbar */
+.navbar .navbar-brand img {
+     width: 100px;
+     /* Set image width */
+     height: auto;
+     /* Auto height to maintain aspect ratio */
+}
+
+.navbar .nav-link {
+     padding-top: 8px;
+     /* Reduced padding on the links */
+     padding-bottom: 8px;
+     /* Reduced padding on the links */
 }
