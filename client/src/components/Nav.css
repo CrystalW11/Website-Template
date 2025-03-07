@@ -5,9 +5,9 @@
      /* Reset margin */
      font-size: 35px;
      /* Standard font size */
-     justify-content: flex-start;
+     justify-content: center;
      font-weight: 600;
-     font-style:normal;
+     font-style: normal;
      /* Clean font style */
      height: auto;
      /* Allow the navbar to adjust height based on content */
@@ -22,10 +22,10 @@
      /* Reduced padding to keep it compact */
      padding-bottom: 8px;
      /* Reduced padding to keep it compact */
-     display: block;
-     /* Default block behavior */
+     display: flex;
+     /* Change to flexbox layout */
+     /* Flex layout enables justify-content */
      box-sizing: border-box;
-
 }
 
 .container {
@@ -37,14 +37,27 @@
 
 .navbar .navbar-brand img {
      width: 100px;
+     display: flex;
+     justify-content: space-between;
+          /* Adjust as needed */
      /* Set image width */
      height: auto;
+     width: auto%;
+     padding: 10px 20px;
+     /* Adjust padding as needed */
+     /* Ensure full width of the navbar */
      /* Auto height to maintain aspect ratio */
 }
 
 .navbar .nav-link {
-     padding-top: 8px;
-     /* Reduced padding on the links */
-     padding-bottom: 8px;
-     /* Reduced padding on the links */
+display: flex;
+     /* Enable flex layout for navbar */
+     justify-content: space-between;
+     /* Distribute space between logo and links */
+     align-items: center;
+     /* Align items vertically */
+     width: 100%;
+     /* Ensure navbar spans the full width */
+     padding: 10px 20px;
+     /* Adjust padding */
 }
