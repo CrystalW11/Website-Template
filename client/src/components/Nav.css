@@ -4,9 +4,6 @@
      font-size: x-large;
      font-weight: 600;
      font-style: oblique;
-     font-feature-settings: "aalt";
-
-
      margin-top: -5%;
      background-color: blanchedalmond !important; /* force the background color*/
      color: darkolivegreen;
@@ -14,9 +11,9 @@
      /* Adjust padding on the left */
      padding-right: 20px;
      /* Adjust padding on the right */
-     padding-top: 10px;
+     padding-top: 40px;
      /* Adjust padding on the top */
-     padding-bottom: 10px;
+     padding-bottom: 40px;
      /* Adjust padding on the bottom */
 }
 
