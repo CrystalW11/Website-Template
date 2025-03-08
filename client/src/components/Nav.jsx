@@ -23,6 +23,9 @@ const NavBar = () => {
           <a className="nav-link" href="/about">
             About
           </a>
+          <a className="nav-link" href="/reservation">
+            Reservation
+          </a>
           <a className="nav-link" href="/services">
             Services
           </a>

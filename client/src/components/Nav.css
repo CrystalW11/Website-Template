@@ -39,25 +39,15 @@
      width: 100px;
      display: flex;
      justify-content: space-between;
-          /* Adjust as needed */
-     /* Set image width */
      height: auto;
-     width: auto%;
      padding: 10px 20px;
-     /* Adjust padding as needed */
-     /* Ensure full width of the navbar */
-     /* Auto height to maintain aspect ratio */
+
 }
 
 .navbar .nav-link {
-display: flex;
-     /* Enable flex layout for navbar */
-     justify-content: space-between;
-     /* Distribute space between logo and links */
-     align-items: center;
-     /* Align items vertically */
-     width: 100%;
-     /* Ensure navbar spans the full width */
-     padding: 10px 20px;
-     /* Adjust padding */
+    display: flex; /* Enable flex layout for navbar */
+  justify-content: space-between; /* Distribute space between logo and links */
+  align-items: center; /* Align items vertically */
+  width: 100%; /* Ensure navbar spans the full width */
+  padding: 10px 20px; /* Adjust padding */
 }
