@@ -37,6 +37,7 @@ const Reservation = () => {
         <div className="form-group">
           <label htmlFor="name form-label">Full Name:</label>
           <input
+            class="form-control"
             type="text"
             id="name"
             name="name"
