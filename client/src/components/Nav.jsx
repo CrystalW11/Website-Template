@@ -11,9 +11,10 @@ const NavBar = () => {
       <div className="container-fluid px-3 d-flex justify-content-between w-100">
         <a className="navbar-brand" href="#">
           <img
-            src="/kristens1_logo.png" // If the image is inside public/images
+            src="/kristens1_logo.png"
             alt="Brand Logo"
             className="navbar-logo"
+            style={{ width: "150px", height: "auto" }}
           />
         </a>
         <div className="d-flex w-50 justify-content-between">
