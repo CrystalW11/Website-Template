@@ -208,19 +208,21 @@ const Reservation = () => {
   };
 
   return (
-    <div className="container-fluid centered-content">
+    <div className="container-fluid">
       <div className="row">
         {/* Left Column: Reservation Form */}
         <div className="col-md-4 mb-4">
-          <h1>Bed & Breakfast Reservation Form</h1>
-          <h2>Welcome to Our Reservation page!</h2>
+          <h1>Welcome to Our Bed & Breakfast Reservation Form</h1>
           <p>Please book a reservation for you and your family to stay</p>
           {/* Error message */}
           {error && <div className="alert alert-danger">{error}</div>}
           <form onSubmit={handleSubmit}>
             <div className="form-group mb-3">
-              <label htmlFor="name">Full Name:</label>
+              <label htmlFor="name" className="font">
+                Full Name:
+              </label>
               <input
+                style={{ color: "purple" }}
                 className="form-control"
                 type="text"
                 id="name"
@@ -233,8 +235,11 @@ const Reservation = () => {
             </div>
 
             <div className="form-group">
-              <label htmlFor="email">Email Address:</label>
+              <label htmlFor="email" className="font">
+                Email Address:
+              </label>
               <input
+                style={{ color: "purple" }}
                 className="form-control"
                 type="email"
                 id="email"
@@ -247,8 +252,11 @@ const Reservation = () => {
             </div>
 
             <div className="form-group">
-              <label htmlFor="checkin">Check-in Date:</label>
+              <label htmlFor="checkin" className="font">
+                Check-in Date:
+              </label>
               <input
+                style={{ color: "purple" }}
                 className="form-control"
                 type="date"
                 id="checkin"
@@ -260,8 +268,11 @@ const Reservation = () => {
             </div>
 
             <div className="form-group">
-              <label htmlFor="checkout">Check-out Date:</label>
+              <label htmlFor="checkout" className="font">
+                Check-out Date:
+              </label>
               <input
+                style={{ color: "purple" }}
                 className="form-control"
                 type="date"
                 id="checkout"
@@ -273,8 +284,11 @@ const Reservation = () => {
             </div>
 
             <div className="form-group">
-              <label htmlFor="guests">Number of Guests:</label>
+              <label htmlFor="guests" className="font">
+                Number of Guests:
+              </label>
               <input
+                style={{ color: "purple" }}
                 className="form-control"
                 type="number"
                 id="guests"
@@ -287,23 +301,35 @@ const Reservation = () => {
             </div>
 
             <div className="form-group">
-              <label htmlFor="room">Room Type:</label>
+              <label htmlFor="room" className="font">
+                Room Type:
+              </label>
               <select
+                style={{ color: "purple" }}
                 className="form-control"
                 id="room"
                 name="room"
                 value={reservationData.room}
                 onChange={handleChange}
                 required>
-                <option value="single">Single</option>
-                <option value="double">Double</option>
-                <option value="suite">Suite</option>
+                <option value="single" style={{ color: "purple" }}>
+                  Single
+                </option>
+                <option value="double" style={{ color: "purple" }}>
+                  Double
+                </option>
+                <option value="suite" style={{ color: "purple" }}>
+                  Suite
+                </option>
               </select>
             </div>
 
             <div className="form-group">
-              <label htmlFor="special-requests">Special Requests:</label>
+              <label htmlFor="special-requests" className="font">
+                Special Requests:
+              </label>
               <textarea
+                style={{ color: "purple" }}
                 className="form-control"
                 id="special-requests"
                 name="specialRequests"
@@ -330,21 +356,34 @@ const Reservation = () => {
               reservations.map((reservation, index) => (
                 <li key={index}>
                   <p>
-                    <strong>{reservation.name}</strong> - {reservation.room}{" "}
+                    <strong>{reservation.name}</strong> -{" "}
+                    <span style={{ color: "purple" }}>{reservation.room} </span>
                     room
                     <br />
                     <strong>Check-in:</strong>{" "}
-                    {formatDateTime(reservation.checkin)}
+                    <span style={{ color: "purple" }}>
+                      {formatDateTime(reservation.checkin)}
+                    </span>
                     <br />
                     <strong>Check-out:</strong>{" "}
-                    {formatDateTime(reservation.checkout)}
+                    <span style={{ color: "purple" }}>
+                      {formatDateTime(reservation.checkout)}
+                    </span>
                     <br />
-                    Guests: {reservation.guests}
+                    <strong>Guests:</strong>{" "}
+                    <span style={{ color: "purple" }}>
+                      {reservation.guests}
+                    </span>
                     <br />
-                    Special Requests: {reservation.specialRequests || "None"}
+                    <strong>Special Requests:</strong>{" "}
+                    <span style={{ color: "purple" }}>
+                      {reservation.specialRequests || "None"}
+                    </span>
                     <br />
                     <strong>Reservation made at:</strong>{" "}
-                    {formatDateTime(reservation.createdAt)}
+                    <span style={{ color: "purple" }}>
+                      {formatDateTime(reservation.createdAt)}
+                    </span>
                   </p>
                   <button
                     className="btn btn-warning"

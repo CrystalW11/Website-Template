@@ -8,7 +8,7 @@ import "./nav.css"; // Ensure this is properly imported
 const NavBar = () => {
   return (
     <nav className="navbar navbar-light bg-light custom-navbar">
-      <div className="container-fluid px-3 d-flex justify-content-between w-100">
+      <div className="container-fluid-nav px-3 d-flex justify-content-between w-100">
         <a className="navbar-brand" href="#">
           <img
             src="/kristens1_logo.png"

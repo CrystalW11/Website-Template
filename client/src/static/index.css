@@ -5,7 +5,7 @@
      align-items: center;
      width: 100%;
      padding: 20px;
-     background-color: #f4f4f4;
+     background-color: lavender;
      box-sizing: border-box;
      /* Remove min-height to prevent stretching */
      min-height: auto;
@@ -47,14 +47,23 @@
      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+h1,h2,h3 {
      margin-bottom: 10px;
-     font-size: 2rem;
+     font-size: 3rem;
+     font-style: normal;
+     color:purple
 }
 
 p {
      margin: 5px 0;
      font-size: 1.1rem;
+
+}
+
+.font {
+     font-size: xx-large;
+     color: purple;
+
 }
 
 
