@@ -11,7 +11,7 @@ const NavBar = () => {
       <div className="container-fluid px-3 d-flex justify-content-between w-100">
         <a className="navbar-brand" href="#">
           <img
-            src="/kristens_logo.png" // If the image is inside public/images
+            src="/kristens1_logo.png" // If the image is inside public/images
             alt="Brand Logo"
             className="navbar-logo"
           />
