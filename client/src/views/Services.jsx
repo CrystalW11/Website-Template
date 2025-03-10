@@ -11,9 +11,9 @@ const Services = () => {
         <h1>Our Services</h1>
         <p>We provide a variety of services to meet your needs.</p>
         <ul className="services-list">
-          <li>Service 1</li>
-          <li>Service 2</li>
-          <li>Service 3</li>
+          <li>Hot tub</li>
+          <li>Disc Golf</li>
+          <li>Fishing</li>
         </ul>
       </div>
     </div>
