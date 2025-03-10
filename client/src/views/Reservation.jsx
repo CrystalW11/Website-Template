@@ -1,6 +1,8 @@
 /** @format */
 
 import React, { useState, useEffect } from "react";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 const Reservation = () => {
   const [reservationData, setReservationData] = useState({
@@ -65,6 +67,15 @@ const Reservation = () => {
     handleDelete(index); // Delete the reservation from the list before updating
   };
 
+  // Function to check if a date is unavailable
+  const isDateUnavailable = (date) => {
+    return reservations.some((reservation) => {
+      const checkinDate = new Date(reservation.checkin);
+      const checkoutDate = new Date(reservation.checkout);
+      return date >= checkinDate && date <= checkoutDate;
+    });
+  };
+
   return (
     <div className="container-fluid centered-content">
       <div className="row">
@@ -102,27 +113,39 @@ const Reservation = () => {
 
             <div className="form-group">
               <label htmlFor="checkin">Check-in Date:</label>
-              <input
+              <DatePicker
                 className="form-control"
-                type="date"
-                id="checkin"
-                name="checkin"
-                value={reservationData.checkin}
-                onChange={handleChange}
+                selected={
+                  reservationData.checkin
+                    ? new Date(reservationData.checkin)
+                    : null
+                }
+                onChange={(date) =>
+                  setReservationData({ ...reservationData, checkin: date })
+                }
                 required
+                minDate={new Date()} // Disable past dates
+                filterDate={(date) => !isDateUnavailable(date)} // Disable unavailable dates
+                dateFormat="yyyy-MM-dd"
               />
             </div>
 
             <div className="form-group">
               <label htmlFor="checkout">Check-out Date:</label>
-              <input
+              <DatePicker
                 className="form-control"
-                type="date"
-                id="checkout"
-                name="checkout"
-                value={reservationData.checkout}
-                onChange={handleChange}
+                selected={
+                  reservationData.checkout
+                    ? new Date(reservationData.checkout)
+                    : null
+                }
+                onChange={(date) =>
+                  setReservationData({ ...reservationData, checkout: date })
+                }
                 required
+                minDate={new Date(reservationData.checkin || Date.now())} // Check-out can't be before check-in
+                filterDate={(date) => !isDateUnavailable(date)} // Disable unavailable dates
+                dateFormat="yyyy-MM-dd"
               />
             </div>
 
@@ -198,7 +221,8 @@ const Reservation = () => {
                       className="btn btn-warning"
                       onClick={() => handleUpdate(index)}>
                       Update
-                    </button><span>|</span>
+                    </button>
+                    <span>|</span>
                     <button
                       className="btn btn-danger"
                       onClick={() => handleDelete(index)}>
