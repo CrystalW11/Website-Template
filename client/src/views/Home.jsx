@@ -17,7 +17,7 @@ const Home = () => {
         border: "2px solid white", // Adds a white border with a width of 2px
       }}>
       <div className="container">
-      <h1 className="white-text">Welcome to Triple R Ranch and Winery</h1>
+      <h1 className="white-text">Welcome to <span style={{color:'red'}}>Red</span> Tail river Ranch!</h1>
       <p className="white-text">
         This is the home page of your winery application.
         </p>

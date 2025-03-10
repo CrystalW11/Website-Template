@@ -1,7 +1,7 @@
 # Website-Template
 
 Home page 
-![alt text](image-6.png)
+![alt text](image.png)
 
 About page 
 ![alt text](image-1.png)
