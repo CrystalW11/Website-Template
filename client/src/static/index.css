@@ -63,3 +63,75 @@ p {
      font-weight: 500;
      font-size: xx-large;
 }
+
+/* calender display on reservations.jsx*/
+/* Highlight reserved dates */
+.calendar-container {
+     display: flex;
+     flex-direction: column;
+     margin-top: 20px;
+}
+
+.calendar-header {
+     display: grid;
+     grid-template-columns: repeat(7, 1fr);
+     background-color: #f0f0f0;
+     padding: 10px;
+     text-align: center;
+     font-weight: bold;
+}
+
+.calendar-grid {
+     display: grid;
+     grid-template-columns: repeat(7, 1fr);
+     gap: 5px;
+}
+
+.calendar-day {
+     background-color: #fff;
+     padding: 10px;
+     text-align: center;
+     cursor: pointer;
+     border: 1px solid #ddd;
+}
+
+.calendar-day.empty-day {
+     background-color: #f9f9f9;
+}
+
+.calendar-day.reserved {
+     background-color: #ffb3b3;
+     /* Reserved days highlighted */
+     color: white;
+}
+
+.calendar-day:hover {
+     background-color: #f1f1f1;
+}
+
+.legend {
+     margin-top: 20px;
+     font-size: 1.1rem;
+}
+
+.legend-item {
+     margin-bottom: 10px;
+     display: flex;
+     align-items: center;
+}
+
+.legend-color {
+     width: 20px;
+     height: 20px;
+     margin-right: 10px;
+}
+
+.legend-color.reserved {
+     background-color: lightpink;
+     /* Reserved color */
+}
+
+.legend-color.available {
+     background-color: green;
+     /* Available color */
+}
