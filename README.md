@@ -13,6 +13,6 @@ Services page
 ![alt text](image-2.png)
 
 Contact 
-![alt text](image-6.png)
+![alt text](image-7.png)
 
 super basic rough draft. 

@@ -142,3 +142,17 @@ p {
      height: auto;
      /* Maintain aspect ratio */
 }
+
+/* Contact.jsx section*/
+.card.m-accordion-body {
+     margin: auto;
+     align-items: center;
+     display: flex;
+     justify-content: center;
+     width: fit-content;
+     padding: 5%;
+     border: darkolivegreen solid 3px;
+     color: green;
+     background-color: lavender;
+     margin-top: 5%;
+}

@@ -9,8 +9,8 @@ import emailImage from "../assets/email.png";
 
 const Contact = () => {
   return (
-    <div className="container-fluid contact-container">
-      <div className="contact-info">
+    <div className="card m-accordion-body">
+      <div className="text-center">
         <h1>Contact Us</h1>
         <p>
           <img
