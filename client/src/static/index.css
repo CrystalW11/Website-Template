@@ -141,7 +141,7 @@ p {
 }
 
 .legend-color.available {
-     background-color: green;
+     background-color: #929B38;
      /* Available color */
 }
 
@@ -161,7 +161,7 @@ p {
      width: fit-content;
      padding: 5%;
      border: darkolivegreen solid 3px;
-     color: green;
+     color: #929B38;
      background-color: lavender;
      margin-top: 5%;
 }
