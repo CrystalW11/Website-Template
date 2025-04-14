@@ -40,3 +40,18 @@
 .read-the-docs {
   color: #888;
 }
+
+
+/* work around for slick.css due to vite. */
+
+/* slick-no-fonts.css */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  user-select: none;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+/* You can add more styles as needed from slick.css, just skip @font-face */
+

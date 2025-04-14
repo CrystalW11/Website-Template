@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "react-slick": "^0.30.3",
+    "slick-carousel": "^1.8.1"
+  },
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "nodemon server/server.js",
+    "client": "vite",
+    "dev": "concurrently \"npm run server\" \"cd client && npm run dev\"",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9",
+    "vite": "^4.5.13"
+  }
+}

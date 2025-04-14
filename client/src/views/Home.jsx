@@ -1,12 +1,22 @@
 /** @format */
 
 import React from "react";
-import lower_deck from "../assets/lower_deck.png"; // Corrected import path
+import Slideshow from "../components/Slideshow"; // Import Slideshow component
+import image1 from "../assets/image1.jpg"; // Corrected import path
+
 
 const Home = () => {
   return (
     <div>
-    {/* <div
+      <Slideshow src={image1} alt="image1" style={{ width: "100%", height: "100%" }}/>
+    </div>
+  );
+};
+
+export default Home;
+
+
+{/* <div
       style={{
         backgroundImage: `url(${lower_deck})`, // Use the imported image
         backgroundSize: "cover",
@@ -25,10 +35,3 @@ const Home = () => {
         </p>
         </div>
       </div> */}
-      <img src={lower_deck} alt="lower_deck" style={{ width: "50%", height: "50vh" }} />
-
-    </div>
-  );
-};
-
-export default Home;

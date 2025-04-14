@@ -17,8 +17,7 @@
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "mongoose": "^8.12.1",
-    "mysql2": "^3.13.0",
-    "save-dev": "^0.0.1-security"
+    "mysql2": "^3.13.0"
   },
   "devDependencies": {
     "concurrently": "^9.1.2",
