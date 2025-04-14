@@ -1,5 +1,3 @@
-/** @format */
-
 import React from "react";
 import { Link } from "react-router-dom"; // import Link from react-router-dom
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -18,21 +16,21 @@ const NavBar = () => {
           />
         </a>
         <div className="d-flex w-50 justify-content-between">
-          <a className="nav-link active" aria-current="page" href="/">
+          <Link className="nav-link active" to="/">
             Home
-          </a>
-          <a className="nav-link" href="/about">
+          </Link>
+          <Link className="nav-link" to="/about">
             About
-          </a>
-          <a className="nav-link" href="/reservation">
+          </Link>
+          <Link className="nav-link" to="/reservation">
             Reservation
-          </a>
-          <a className="nav-link" href="/services">
+          </Link>
+          <Link className="nav-link" to="/services">
             Services
-          </a>
-          <a className="nav-link" href="/contact">
+          </Link>
+          <Link className="nav-link" to="/contact">
             Contact
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
