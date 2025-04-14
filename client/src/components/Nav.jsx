@@ -3,7 +3,7 @@
 import React from "react";
 import { Link } from "react-router-dom"; // import Link from react-router-dom
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./Nav.css"; // Ensure this is properly imported
+import "./nav.css"; // Ensure this is properly imported
 
 const NavBar = () => {
   return (
