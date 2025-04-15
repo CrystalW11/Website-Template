@@ -5,7 +5,7 @@ import "./nav.css"; // Ensure this is properly imported
 
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-light bg-light custom-navbar">
+    <Nav className="navbar navbar-light bg-light custom-navbar">
       <div className="container-fluid-nav px-3 d-flex justify-content-between w-100">
         <Link className="navbar-brand" to="/">
           <img
@@ -33,7 +33,7 @@ const NavBar = () => {
           </Link>
         </div>
       </div>
-    </nav>
+    </Nav>
   );
 };
 
